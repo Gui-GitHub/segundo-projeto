@@ -1,0 +1,91 @@
+body {
+    background: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 300px; /* Tamanho padrão para desktop */
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+}
+
+#display {
+    width: 95%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    border-radius: 10px; 
+    background-color: #e6e6e6; 
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.operation {
+    background-color: #f39c12; 
+    color: #fff;
+}
+
+.number {
+    background-color: #3498db;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #ddd;
+    transform: scale(1.05); 
+}
+
+button:active {
+    background-color: #bfbfbf;
+    transform: scale(0.95);
+}
+
+/* Media queries */
+
+/* Celulares */
+@media (max-width: 480px) {
+    .calculator {
+        width: 90%;
+    }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    .calculator {
+        width: 70%;
+    }
+}
+
+/* Computadores */
+@media (min-width: 769px) {
+    .calculator {
+        width: 300px;
+    }
+}
+
+
+
