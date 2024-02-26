@@ -6,7 +6,7 @@ function clearDisplay() {
     document.getElementById("display").value = "";
 }
 
-function calculate() {
+function calcular() {
     var expression = document.getElementById("display").value;
     try {
         var result = eval(expression);
