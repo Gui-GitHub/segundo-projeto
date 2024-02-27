@@ -15,3 +15,13 @@ function calcular() {
         document.getElementById("display").value = "Error";
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    var toggleSwitch = document.getElementById('toggleSwitch');
+    toggleSwitch.addEventListener('change', toggleDarkMode);
+});
+
+function toggleDarkMode() {
+    var body = document.body;
+    body.classList.toggle("dark-mode");
+}
